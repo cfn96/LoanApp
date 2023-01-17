@@ -22,16 +22,6 @@ class MainApp(MDApp):
                 TwoLineListItem(text=customer[1],
                                 secondary_text='{:.2f}'.format(customer[2]))
             )
-        # for floating button
-        self.root.ids.floatbutton.add_widget(
-            MDFloatingActionButton(
-                icon="pencil",
-                type="standard",
-                theme_icon_color="Custom",
-                md_bg_color="#e9dff7",
-                icon_color="#211c29",
-            )
-        )
         return super().on_start()
 
 
