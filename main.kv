@@ -1,23 +1,15 @@
-MainMenu:
-    
-    MDSegmentedControl:
-        pos_hint: {"center_x": 0.5, "center_y": 0.9}
+WindowManager:
+    MainMenu:
+    UpdateForm:
 
-        MDSegmentedControlItem:
-            text: "Current"
-
-        MDSegmentedControlItem:
-            text: "Paid"
-
-        MDSegmentedControlItem:
-            text: "All"
-
-    MDScrollView:
-        pos_hint: {"center_x": 0.5,"center_y": 0.3}
-        MDList:
-            id: container
-            pos_hint: {"center_x": 0.5, "center_y": 0}
+<MainMenu>:
+    name: "main_menu"
+    id: "main_menu"
     MDFloatingActionButton:
         icon: "account-plus"
         md_bg_color: app.theme_cls.primary_color
         pos_hint: {'center_x': .93,'center_y': 0.09}
+
+<UpdateForm>:
+    name: "update_form"
+    id: "update_form"
